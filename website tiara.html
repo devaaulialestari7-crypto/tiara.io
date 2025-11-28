@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pink</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #ffe6f2;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        nav {
+            background: #ff66a3;
+            padding: 15px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: #ffe6f2;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff3385;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .text-wrapper {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: justify;
+        }
+
+        .foto-home {
+            width: 250px;
+            max-width: 90%;
+            border-radius: 15px;
+            border: 4px solid #ff66a3;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .foto-about {
+            width: 220px;
+            max-width: 90%;
+            border-radius: 15px;
+            border: 4px solid #ff66a3;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* PROJECT STYLING */
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            width: 250px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .project-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .project-card h3 {
+            color: #ff3385;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        /* Responsif */
+        @media (max-width: 600px) {
+            .foto-home {
+                width: 180px;
+            }
+            .foto-about {
+                width: 160px;
+            }
+            .project-card {
+                width: 90%;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h1>Selamat Datang</h1>
+        <p>Ini adalah contoh website pink dengan menu navigasi. Semoga kamu suka desainnya!</p>
+        <img src="foto/tiara.jpg" alt="Gambar Home" class="foto-home">
+    </section>
+
+    <section id="about">
+        <h1>About</h1>
+        <div class="text-wrapper">
+            <p>Halo, Saya Tiara Hairunnisa, seorang Pelajar Jurusan RPL di Sekolah SMK Pelita Nusa. Saya membuat website ini karena saya tahu betapa sulitnya mencari sumber daya yang jelas dan relatable selama masa studi. Saya ingat saat saya kesulitan memahami konsep membuat website. Sejak saat itu, saya berjanji untuk menyederhanakan materi sulit dan membagikannya kepada Anda.</p>
+        </div>
+        <img src="foto/tiara2.jpg" alt="Gambar About" class="foto-about">
+    </section>
+
+    <section id="project">
+        <h1>Project</h1>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="foto/tiara3.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Deskripsi singkat tentang project pertama saya.</p>
+            </div>
+            <div class="project-card">
+                <img src="foto/tiara4.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Deskripsi singkat tentang project kedua saya.</p>
+            </div>
+            <div class="project-card">
+                <img src="foto/tiara5.jpg" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>Deskripsi singkat tentang project ketiga saya.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1>Contact</h1>
+        <p>Hubungi saya di email: <b>tiarahairunnisa0@email.com</b></p>
+        <p>Hubungi saya di Instagram: <b>raa.knn22</b></p>
+    </section>
+
+</body>
+</html>
